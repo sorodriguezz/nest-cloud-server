@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/sorodriguezz/nest-config-server#readme",
   "dependencies": {
+    "@sorodriguez/nest-config-server": "file:sorodriguez-nest-config-server-0.0.1.tgz",
     "simple-git": "^3.29.0"
   },
   "peerDependencies": {

@@ -1,0 +1,40 @@
+import { Logger } from "@nestjs/common";
+import { existsSync, mkdirSync } from "fs";
+import { join } from "path";
+import { validateRepository } from "./validations.util";
+import { RepositoryManager } from "../../config-server/interfaces/repository-manager.interface";
+import { IRepositoryUrlBuilder } from "../builders/interfaces/repository-builder.interface";
+
+export const ensureDirectory = (basePath: string, repository: string): void => {
+  const dirPath = getConfigPath(basePath, repository);
+
+  if (!existsSync(dirPath)) {
+    Logger.verbose(`Creating directory: ${dirPath}`, "DirectoriesUtil");
+    mkdirSync(dirPath, { recursive: true });
+  }
+};
+
+export const getConfigPath = (
+  pathRepositories: string,
+  repository: string
+): string => {
+  return join(pathRepositories, repository);
+};
+
+export const getRepositoryUrl = (
+  repository: RepositoryManager,
+  urlBuilder: IRepositoryUrlBuilder
+): string => {
+  validateRepository(repository);
+
+  return urlBuilder
+    .setAsPublic(false)
+    .setCredentials(
+      repository.auth?.username || "",
+      repository.auth?.token || ""
+    )
+    .setHost(repository.host)
+    .setOrganization(repository.organization)
+    .setRepository(repository.repository)
+    .build();
+};
