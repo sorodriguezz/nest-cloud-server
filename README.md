@@ -338,32 +338,3 @@ import {
 ## 📄 License
 
 ISC
-
-## 🤝 Contributing
-
-Contributions are welcome. Please:
-
-1. Fork the project
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-ISC
-
-## 👤 Author
-
-**sorodriguezz**
-
-- GitHub: [@sorodriguezz](https://github.com/sorodriguezz)
-- NPM: [@sorodriguez](https://www.npmjs.com/~sorodriguez)
-
-## 🐛 Report Issues
-
-If you find a bug or have a suggestion, please open an issue on [GitHub](https://github.com/sorodriguezz/nest-config-server/issues).
-
-## ⭐ Give a Star
-
-If you found this project useful, consider giving it a star on [GitHub](https://github.com/sorodriguezz/nest-config-server).
