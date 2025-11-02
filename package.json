@@ -1,5 +1,5 @@
 {
-  "name": "@sorodriguez/nest-cloud-server",
+  "name": "@sorodriguez/nest-cloud-config-server",
   "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,9 +19,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sorodriguezz/nest-cloud-server.git"
+    "url": "git+https://github.com/sorodriguezz/nest-cloud-config-server.git"
   },
-  "homepage": "https://github.com/sorodriguezz/nest-cloud-server#readme",
+  "homepage": "https://github.com/sorodriguezz/nest-cloud-config-server#readme",
   "dependencies": {
     "fast-xml-parser": "^5.3.0",
     "glob": "^11.0.3",

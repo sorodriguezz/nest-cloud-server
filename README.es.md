@@ -1,4 +1,4 @@
-# Nest Config Server
+# Nest Cloud Config Server
 
 [English](./README.md) | **Español**
 
@@ -18,7 +18,7 @@ Servidor de configuración centralizada para aplicaciones NestJS, inspirado en S
 ## 📦 Instalación
 
 ```bash
-npm install @sorodriguez/nest-config-server
+npm install @sorodriguez/nest-cloud-config-server
 ```
 
 ## 🔧 Configuración Básica
@@ -30,7 +30,7 @@ import { Module } from "@nestjs/common";
 import {
   ConfigServerModule,
   RepositoryType,
-} from "@sorodriguez/nest-config-server";
+} from "@sorodriguez/nest-cloud-config-server";
 
 @Module({
   imports: [
@@ -303,7 +303,7 @@ Puedes inyectar `ConfigServerService` en cualquier servicio:
 
 ```typescript
 import { Injectable } from "@nestjs/common";
-import { ConfigServerService } from "@sorodriguez/nest-config-server";
+import { ConfigServerService } from "@sorodriguez/nest-cloud-config-server";
 
 @Injectable()
 export class MyService {
@@ -328,7 +328,7 @@ import {
   RepositoryType,
   ConfigQueryDto,
   IConfigFile,
-} from "@sorodriguez/nest-config-server";
+} from "@sorodriguez/nest-cloud-config-server";
 ```
 
 ## 📄 Licencia
