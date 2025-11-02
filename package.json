@@ -1,5 +1,5 @@
 {
-  "name": "@sorodriguez/nest-config-server",
+  "name": "@sorodriguez/nest-cloud-server",
   "version": "1.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,6 +13,7 @@
     "nestjs",
     "config",
     "server",
+    "cloud",
     "configserver",
     "microservices"
   ],
